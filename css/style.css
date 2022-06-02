@@ -5,3 +5,15 @@
   padding: 0px;
   margin: 0px;
 }
+
+/*Main Design
+---------------*/
+/*Footer
+---------*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
