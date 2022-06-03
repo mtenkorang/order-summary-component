@@ -13,7 +13,11 @@ body {
   place-items: center;
 }
 
-/*Main Design
+h1, h2, p, a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/*Main and General Design
 ---------------*/
 main.card {
   border: 1px solid pink;
@@ -27,8 +31,17 @@ main.card img.hero {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
-main.card h1, main.card p, main.card a {
-  font-family: "Red Hat Display", sans-serif;
+
+/*Design for content div*/
+.content {
+  margin: 15px;
+}
+.content .text {
+  border: 1px dotted maroon;
+  text-align: center;
+}
+.content h1, .content h2 {
+  color: hsl(223deg, 47%, 23%);
 }
 
 /*Footer
