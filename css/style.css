@@ -120,6 +120,7 @@ a.btn.btn-secondary {
 /*Footer
 ---------*/
 .attribution {
+  display: block;
   font-size: 11px;
   text-align: center;
 }
