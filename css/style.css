@@ -126,3 +126,11 @@ a.btn.btn-secondary {
 .attribution a {
   color: hsl(228deg, 45%, 44%);
 }
+
+/*Media Queries*/
+@media screen and (max-width: 425px) {
+  main.card {
+    max-width: 20rem;
+    height: 31rem;
+  }
+}
