@@ -6,35 +6,6 @@
   margin: 0px;
 }
 
-.button {
-  border: 1px dotted pink;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.button a {
-  text-decoration: none;
-  font-weight: 700;
-}
-.button ahover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  cursor: pointer;
-}
-.button .btn {
-  border: 1px solid gold;
-  width: 100%;
-  text-align: center;
-  padding: 12px 0;
-}
-
 body {
   background-color: hsl(225deg, 100%, 94%);
   height: 100vh;
@@ -50,7 +21,7 @@ h1, p, a {
 ---------------*/
 main.card {
   width: 22rem;
-  height: 34rem;
+  height: 33rem;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -89,13 +60,61 @@ main.card img.hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: hsl(225deg, 100%, 94%);
   border-radius: 10px;
   padding: 10px 0;
   margin-bottom: 20px;
+}
+.content .subcription .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .subcription a {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+}
+
+/*Button Design*/
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.button a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.button ahover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  cursor: pointer;
+}
+
+a.btn {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 12px;
+}
+a.btn.btn-primary {
+  color: #fff;
+  background-color: hsl(245deg, 75%, 52%);
+}
+a.btn.btn-secondary {
+  color: hsl(224deg, 23%, 55%);
 }
 
 /*Footer
