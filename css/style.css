@@ -13,15 +13,15 @@ body {
   place-items: center;
 }
 
-h1, p, a {
+h1, h2, p, a {
   font-family: "Red Hat Display", sans-serif;
 }
 
 /*Main and General Design
 ---------------*/
 main.card {
-  width: 22rem;
-  height: 33rem;
+  width: 20rem;
+  height: 33.5rem;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -37,19 +37,30 @@ main.card img.hero {
   margin: 0 20px 20px 20px;
 }
 .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  margin-bottom: 20px;
-  padding: 10px 0;
+  word-spacing: 1px;
+  margin: 20px 0;
+  line-height: 1.5;
 }
 .content h1 {
   color: hsl(223deg, 47%, 23%);
   font-weight: 900;
   margin: 10px 0;
 }
-.content p.plan {
+.content h2.plan {
   color: hsl(223deg, 47%, 23%);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .content p {
   color: hsl(224deg, 23%, 55%);
@@ -61,8 +72,9 @@ main.card img.hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: hsl(225deg, 100%, 94%);
   border-radius: 10px;
   padding: 10px 0;
@@ -76,9 +88,18 @@ main.card img.hero {
       -ms-flex-align: center;
           align-items: center;
 }
+.content .subcription img {
+  margin: 0 15px;
+}
 .content .subcription a {
   color: hsl(245deg, 75%, 52%);
   font-weight: 700;
+  margin-right: 10px;
+}
+.content .subcription a:hover {
+  color: #6255e7;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*Button Design*/
@@ -98,11 +119,6 @@ main.card img.hero {
   text-decoration: none;
   font-weight: 700;
 }
-.button ahover {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-  cursor: pointer;
-}
 
 a.btn {
   width: 100%;
@@ -114,13 +130,29 @@ a.btn.btn-primary {
   color: #fff;
   background-color: hsl(245deg, 75%, 52%);
 }
+a.btn.btn-primary:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+  background-color: #6255e7;
+  -webkit-box-shadow: 0 1px 10px #6255e7;
+          box-shadow: 0 1px 10px #6255e7;
+}
 a.btn.btn-secondary {
+  margin-top: 10px;
   color: hsl(224deg, 23%, 55%);
+}
+a.btn.btn-secondary:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 /*Footer
 ---------*/
 .attribution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 11px;
   text-align: center;
 }
@@ -128,10 +160,14 @@ a.btn.btn-secondary {
   color: hsl(228deg, 45%, 44%);
 }
 
-/*Media Queries*/
-@media screen and (max-width: 425px) {
+/* Media Queries*/
+@media screen and (min-width: 550px) {
   main.card {
-    max-width: 20rem;
-    height: 31rem;
+    width: 24rem;
+    height: 35rem;
+  }
+
+  .content {
+    margin: 0px 30px 30px 30px;
   }
 }
