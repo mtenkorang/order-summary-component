@@ -15,6 +15,14 @@ body {
 
 /*Main Design
 ---------------*/
+main.card {
+  border: 1px solid pink;
+  width: 25rem;
+  height: 34rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
 /*Footer
 ---------*/
 .attribution {
