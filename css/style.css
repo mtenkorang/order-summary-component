@@ -17,9 +17,9 @@ body {
 ---------------*/
 main.card {
   border: 1px solid pink;
-  width: 25rem;
+  width: 22rem;
   height: 34rem;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #fff;
 }
 
