@@ -26,6 +26,7 @@ main.card {
   background-color: #fff;
 }
 main.card img.hero {
+  display: block;
   width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -33,7 +34,7 @@ main.card img.hero {
 
 /*Design for content div*/
 .content {
-  margin: 0 20px;
+  margin: 0 20px 20px 20px;
 }
 .content .text {
   text-align: center;
