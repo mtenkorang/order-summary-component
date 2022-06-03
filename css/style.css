@@ -24,8 +24,8 @@ main.card {
   height: 33.5rem;
   border-radius: 15px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 2px 5px hsl(224deg, 23%, 55%);
-          box-shadow: 0px 2px 5px hsl(224deg, 23%, 55%);
+  -webkit-box-shadow: 0px 1px 3px hsl(224deg, 23%, 55%);
+          box-shadow: 0px 1px 3px hsl(224deg, 23%, 55%);
 }
 main.card img.hero {
   display: block;
