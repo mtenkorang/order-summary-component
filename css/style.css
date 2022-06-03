@@ -22,6 +22,14 @@ main.card {
   border-radius: 15px;
   background-color: #fff;
 }
+main.card img.hero {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+main.card h1, main.card p, main.card a {
+  font-family: "Red Hat Display", sans-serif;
+}
 
 /*Footer
 ---------*/
